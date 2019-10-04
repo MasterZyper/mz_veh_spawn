@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mz_veh_spawn", "mz_veh_spawn\mz_veh_spawn.csproj", "{82D94A7B-77CA-43E3-831C-5405080F6608}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82D94A7B-77CA-43E3-831C-5405080F6608}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82D94A7B-77CA-43E3-831C-5405080F6608}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82D94A7B-77CA-43E3-831C-5405080F6608}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82D94A7B-77CA-43E3-831C-5405080F6608}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DA516E3-02C2-4292-B0B0-C0E246457D1C}
+	EndGlobalSection
+EndGlobal
