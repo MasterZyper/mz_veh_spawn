@@ -62,16 +62,19 @@ namespace mz_veh_spawn
                         checker = false;
                         Debug.Write(LG_veh_not_on_whitelist + "\n");
                     }
-                    Debug.Write($"{LG_veh_spawn}: {veh_hash}...\n");
-                    Vehicle veh = await SpawnVehicle((uint)API.GetHashKey(veh_hash), Game.PlayerPed.Position);
-                    if (veh == null)
+                    if (checker)
                     {
-                        Debug.Write(LG_veh_not_spawned_hash+"\n");
-                    }
-                    else
-                    {
-                        player_vehs.Add(veh);
-                        Game.PlayerPed.Task.WarpIntoVehicle(veh, VehicleSeat.Driver);
+                        Debug.Write($"{LG_veh_spawn}: {veh_hash}...\n");
+                        Vehicle veh = await SpawnVehicle((uint)API.GetHashKey(veh_hash), Game.PlayerPed.Position);
+                        if (veh == null)
+                        {
+                            Debug.Write(LG_veh_not_spawned_hash + "\n");
+                        }
+                        else
+                        {
+                            player_vehs.Add(veh);
+                            Game.PlayerPed.Task.WarpIntoVehicle(veh, VehicleSeat.Driver);
+                        }
                     }
                 }
                 else 
